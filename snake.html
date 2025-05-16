@@ -25,7 +25,7 @@
             justify-content: center;
             grid-template-columns: repeat(10,80px);
             grid-template-rows: repeat(10,50px);
-            background-image: url('/Assets/board.jpg');
+            background-image: url('board.jpg');
             background-size:800px 500px;
             
             
@@ -192,29 +192,29 @@
 
     <script>
 function win(){
-  let win=new Audio('/Assets/win.mp3')
+  let win=new Audio('win.mp3')
   
   win.play()
 }
 function rolling(){
-    let rolling=new Audio('/Assets/rollsound.mp3')
+    let rolling=new Audio('rollsound.mp3')
     rolling.play()
 }
 function snake(){
-  let snake=new Audio('/Assets/snake.mp3')
+  let snake=new Audio('snake.mp3')
   snake.play()
 }
 function Ladder(){
-    let ladder=new Audio('/Assets/ladder.mp3')
+    let ladder=new Audio('ladder.mp3')
     ladder.play()
 }
 count=0
 count1=0
 dice=0
 let div=document.getElementsByClassName('img')[0]
-div.setAttribute('src','/Assets/redtoken.webp')
+div.setAttribute('src','redtoken.webp')
 let div1=document.getElementsByClassName('img1')[0]
-div1.setAttribute('src','/Assets/bluetoken.webp')
+div1.setAttribute('src','bluetoken.webp')
 // let div1=document.createElement('div')
         div1.style.height='30px'
         div1.style.width='30px'
@@ -234,7 +234,7 @@ function roll(){
     
 
    let random =1+Math.floor(Math.random()*6)
-   document.getElementsByClassName('img3')[0].setAttribute("src",`/Assets/dice${random}.png`)
+   document.getElementsByClassName('img3')[0].setAttribute("src",`dice${random}.png`)
    dice=dice+1
 //    while(count==0){
 //     if(random!=6){
@@ -340,7 +340,7 @@ dice1=0
 function roll1(){
     rolling()
   let random =1+Math.floor(Math.random()*6)
-  document.getElementsByClassName('img3')[0].setAttribute("src",`/Assets/dice${random}.png`)
+  document.getElementsByClassName('img3')[0].setAttribute("src",`dice${random}.png`)
    if(count1+random<=100){
        
        count1=count1+random
